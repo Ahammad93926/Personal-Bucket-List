@@ -1,4 +1,4 @@
-/* Clean and minimal styles with green theme */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +6,10 @@
 }
 
 :root {
-    --header-color: #0a2c2d;      /* Darker greenish blue */
-    --footer-color: #7fbeab;      /* Light bluish green */
-    --completed-color: #1d4e4f;   /* Dark greenish blue */
-    --background-green: #e8f3e8;  /* Light green */
+    --header-color: #0a2c2d;      
+    --footer-color: #7fbeab;      
+    --completed-color: #1d4e4f;   
+    --background-green: #e8f3e8;  
     --white: #ffffff;
     --dark-text: #1a1a1a;
     --shadow: rgba(0, 0, 0, 0.1);
