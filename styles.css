@@ -1,0 +1,161 @@
+/* Clean and minimal styles with green theme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-color: #0a2c2d;      /* Darker greenish blue */
+    --footer-color: #7fbeab;      /* Light bluish green */
+    --completed-color: #1d4e4f;   /* Dark greenish blue */
+    --background-green: #e8f3e8;  /* Light green */
+    --white: #ffffff;
+    --dark-text: #1a1a1a;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--background-green);
+    min-height: 100vh;
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--header-color);
+    margin: 0 -20px 30px;
+    box-shadow: 0 4px 6px var(--shadow);
+}
+
+h1 {
+    color: var(--white);
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    color: var(--white);
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+/* Main Content */
+.list-container {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+h2 {
+    color: var(--header-color);
+    font-size: 1.8rem;
+    margin: 20px 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--completed-color);
+}
+
+h2:first-child {
+    margin-top: 0;
+}
+
+/* List Items */
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 15px 20px;
+    margin: 10px 0;
+    background: var(--background-green);
+    border-left: 4px solid var(--header-color);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.2s ease;
+}
+
+li:hover {
+    transform: translateX(10px);
+    background: #d9ebd9;
+}
+
+li i {
+    color: var(--header-color);
+}
+
+.completed {
+    background: var(--completed-color);
+    border-left-color: var(--white);
+    color: var(--white);
+}
+
+.completed i {
+    color: var(--white);
+}
+
+/* Checkbox Styles */
+.item-actions {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.complete-icon,
+.complete-icon-filled {
+    color: var(--header-color);
+    transition: color 0.2s;
+}
+
+.complete-icon-filled {
+    color: var(--white);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin: 40px -20px 0;
+    background: var(--footer-color);
+    color: var(--dark-text);
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    header {
+        margin: 0 -15px 20px;
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .list-container {
+        padding: 20px;
+    }
+
+    li {
+        padding: 12px 15px;
+        font-size: 0.95rem;
+    }
+}
